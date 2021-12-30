@@ -15,4 +15,8 @@ Christmastree.Draw(5)
 
 # Timer
 
+```ps
+[Environment]::SetEnvironmentVariable("MOB_TIMER_ROOM", "cardbusters")
+```
+
 https://timer.mob.sh/cardbusters

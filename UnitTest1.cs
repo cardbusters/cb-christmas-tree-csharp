@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace christmas_tree_kata
@@ -10,8 +11,17 @@ namespace christmas_tree_kata
         {
             var expected = 5;
             var actual = Christmastree.Draw(4);
-            var test = 1;
+            
             Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void DrawMethodReturnsATypeOfList()
+        {
+            var expectedType = typeof(List<object>);
+            var actual = Christmastree.Draw(4);
+            
+            Assert.IsType(expected, actual);
         }
     }
 }

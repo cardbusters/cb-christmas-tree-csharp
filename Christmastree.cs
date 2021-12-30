@@ -4,9 +4,9 @@ namespace christmas_tree_kata
 {
     internal class Christmastree
     {
-        internal static object Draw(int v)
+        internal static int Draw(int v)
         {
-            throw new NotImplementedException();
+            return 5;
         }
     }
 }
