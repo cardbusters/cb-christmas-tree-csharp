@@ -24,6 +24,22 @@ namespace christmas_tree_kata
             Assert.IsType(expectedType, actualList);
         }
 
-        
+        [Fact]
+        public void DrawMethod_Given5ThenReturnsFirstItemWithOneXAnd7Spaces()
+        {
+            var expectedString = "       X";
+            var actualString = Christmastree.Draw(5)[0];
+
+            Assert.Equal(expectedString, actualString);
+        }
+
+        [Fact]
+        public void DrawMethod_Given5ThenReturnsSecondItemWithThreeXAnd6Spaces()
+        {
+            var expectedString = "      XXX";
+            var actualString = Christmastree.Draw(5)[1];
+
+            Assert.Equal(expectedString, actualString);
+        }
     }
 }
