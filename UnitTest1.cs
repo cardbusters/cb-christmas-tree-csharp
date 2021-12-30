@@ -6,9 +6,9 @@ namespace christmas_tree_kata
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void DrawMethodCannotTakeLessThenValue5()
         {
-
+            Assert.Equal(expected)
         }
     }
 }
