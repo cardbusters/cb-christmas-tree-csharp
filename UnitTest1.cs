@@ -7,21 +7,21 @@ namespace christmas_tree_kata
     public class UnitTest1
     {
         [Fact]
-        public void DrawMethodCannotTakeLessThenValue5()
+        public void DrawMethod_GivingLessThan5ThenOutputShouldBe6()
         {
-            var expected = 5;
-            var actual = Christmastree.Draw(4);
-            
-            Assert.Equal(expected, actual);
+            var expectedCount = 6;
+            var actualList = Christmastree.Draw(4);
+
+            Assert.Equal(expectedCount, actualList.Count);
         }
 
         [Fact]
         public void DrawMethodReturnsATypeOfList()
         {
             var expectedType = typeof(List<object>);
-            var actual = Christmastree.Draw(4);
-            
-            Assert.IsType(expected, actual);
+            var actualValue = Christmastree.Draw(4);
+
+            Assert.IsType(expectedType, actualValue.GetType());
         }
     }
 }

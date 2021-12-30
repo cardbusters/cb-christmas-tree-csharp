@@ -1,12 +1,13 @@
 using System;
+using System.Collections.Generic;
 
 namespace christmas_tree_kata
 {
     internal class Christmastree
     {
-        internal static int Draw(int v)
+        internal static List<object> Draw(int v)
         {
-            return 5;
+            return new List<object>();
         }
     }
 }
