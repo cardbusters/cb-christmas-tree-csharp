@@ -8,7 +8,10 @@ namespace christmas_tree_kata
         [Fact]
         public void DrawMethodCannotTakeLessThenValue5()
         {
-            Assert.Equal(expected)
+            var expected = 5;
+            var actual = Christmastree.Draw(4);
+
+            Assert.Equal(expected, actual);
         }
     }
 }

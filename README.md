@@ -10,7 +10,7 @@ Christmastree.Draw(5)
     XXXXXXX
    XXXXXXXXX
        X
-       
+
 ```
 
 # Timer
