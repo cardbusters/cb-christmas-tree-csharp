@@ -10,7 +10,7 @@ namespace christmas_tree_kata
         {
             var expected = 5;
             var actual = Christmastree.Draw(4);
-
+            var test = 1;
             Assert.Equal(expected, actual);
         }
     }
