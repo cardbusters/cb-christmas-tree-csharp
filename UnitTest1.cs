@@ -16,12 +16,14 @@ namespace christmas_tree_kata
         }
 
         [Fact]
-        public void DrawMethodReturnsATypeOfList()
+        public void DrawMethod_GivenAnyValueThenReturnsListOfObjects()
         {
             var expectedType = typeof(List<object>);
-            var actualValue = Christmastree.Draw(4);
+            var actualList = Christmastree.Draw(4);
 
-            Assert.IsType(expectedType, actualValue.GetType());
+            Assert.IsType(expectedType, actualList);
         }
+
+        
     }
 }
