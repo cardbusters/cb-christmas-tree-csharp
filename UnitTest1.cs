@@ -41,5 +41,13 @@ namespace christmas_tree_kata
 
             Assert.Equal(expectedString, actualString);
         }
+
+        [Theory]
+        [InlineData("       X",0)]
+        public void DrawMethod_Given5ThenReturnsSpecificData(string expectedString, int index){
+            var actualString = Christmastree.Draw(5)[index];
+
+            Assert.Equal(expectedString, actualString);
+        }
     }
 }
