@@ -51,7 +51,7 @@ namespace christmas_tree_kata
         [Fact]
         public void DrawMethod_Given6ThenIndex5ShouldContain11Xs()
         {
-            var actualString = null;
+            var actualString = Christmastree.Draw(6)[5];
             var expectedString = "   XXXXXXXXXXX";
             Assert.Equal(expectedString, actualString);
         }
