@@ -24,26 +24,10 @@ namespace christmas_tree_kata
             Assert.IsType(expectedType, actualList);
         }
 
-        [Fact]
-        public void DrawMethod_Given5ThenReturnsFirstItemWithOneXAnd7Spaces()
-        {
-            var expectedString = "       X";
-            var actualString = Christmastree.Draw(5)[0];
-
-            Assert.Equal(expectedString, actualString);
-        }
-
-        [Fact]
-        public void DrawMethod_Given5ThenReturnsSecondItemWithThreeXAnd6Spaces()
-        {
-            var expectedString = "      XXX";
-            var actualString = Christmastree.Draw(5)[1];
-
-            Assert.Equal(expectedString, actualString);
-        }
-
         [Theory]
         [InlineData("       X",0)]
+        [InlineData("      XXX",1)]
+        [InlineData("     XXXXX",2)]
         public void DrawMethod_Given5ThenReturnsSpecificData(string expectedString, int index){
             var actualString = Christmastree.Draw(5)[index];
 
