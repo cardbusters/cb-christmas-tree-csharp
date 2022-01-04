@@ -7,14 +7,16 @@ namespace christmas_tree_kata
     {
         internal static List<object> Draw(int v)
         {
-
-            return new List<object>(){
+            var list = new List<object>(){
                 "       X",
                 "      XXX",
                 "     XXXXX",
                 "    XXXXXXX",
                 "   XXXXXXXXX",
                 "       X"};
+
+            list.Add("");
+            
         }
     }
 }

@@ -38,9 +38,14 @@ namespace christmas_tree_kata
         }
 
         [Theory]
+        [InlineData(1,6)]
+        [InlineData(5,6)]
+        [InlineData(6,7)]
         public void DrawMethod_GivenHeightShouldReturnActualHeight(int height, int expectedHeight)
         {
-            
+            var actualList = Christmastree.Draw(height);
+
+            Assert.Equal(expectedHeight, actualList.Count);        
         }
     }
 }
