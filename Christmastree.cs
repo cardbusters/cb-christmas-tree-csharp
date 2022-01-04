@@ -14,25 +14,26 @@ namespace christmas_tree_kata
 
             var list = new List<object>();
 
+            var numberOfX = 1;
+            var numberOfSpace = 7;
             for (int i = 0; i < v; i++)
             {
-                // find spaces
-                // find x'es
-                //concat and add into list
                 string temp = "";
-                for (int k = 0; k < 7 - i; k++)
+                for (int k = 0; k < numberOfSpace; k++)
                 {
                     temp += " ";
                 }
-                for (int z = 0; z <= i; z++)
+                for (int z = 0; z < numberOfX; z++)
                 {
-                    if(z=)
                     temp += "X";
                 }
 
                 list.Add(temp);
+
+                numberOfX += 2;
+                numberOfSpace -= 1;
             }
-                list.Add("       X");
+            list.Add("       X");
 
             // var list = new List<object>(){
             //     "       X",
