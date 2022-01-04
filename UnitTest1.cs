@@ -36,5 +36,11 @@ namespace christmas_tree_kata
 
             Assert.Equal(expectedString, actualString);
         }
+
+        [Theory]
+        public void DrawMethod_GivenHeightShouldReturnActualHeight(int height, int expectedHeight)
+        {
+            
+        }
     }
 }

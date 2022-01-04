@@ -14,7 +14,7 @@ namespace christmas_tree_kata
                 "     XXXXX",
                 "    XXXXXXX",
                 "   XXXXXXXXX",
-                6};
+                "       X"};
         }
     }
 }
