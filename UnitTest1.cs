@@ -28,6 +28,9 @@ namespace christmas_tree_kata
         [InlineData("       X",0)]
         [InlineData("      XXX",1)]
         [InlineData("     XXXXX",2)]
+        [InlineData("    XXXXXXX",3)]
+        [InlineData("   XXXXXXXXX",4)]
+        [InlineData("       X",5)]
         public void DrawMethod_Given5ThenReturnsSpecificData(string expectedString, int index){
             var actualString = Christmastree.Draw(5)[index];
 
