@@ -7,6 +7,11 @@ namespace christmas_tree_kata
     {
         internal static List<object> Draw(int v)
         {
+            if (v < 5)
+            {
+                v = 5;
+            }
+
             var list = new List<object>();
 
             for (int i = 0; i < v; i++)
@@ -21,6 +26,7 @@ namespace christmas_tree_kata
                 }
                 for (int z = 0; z <= i; z++)
                 {
+                    if(z=)
                     temp += "X";
                 }
 
