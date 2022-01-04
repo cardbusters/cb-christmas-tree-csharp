@@ -47,5 +47,13 @@ namespace christmas_tree_kata
 
             Assert.Equal(expectedHeight, actualList.Count);        
         }
+
+        [Fact]
+        public void DrawMethod_Given6ThenIndex5ShouldContain11Xs()
+        {
+            var actualString = null;
+            var expectedString = "   XXXXXXXXXXX";
+            Assert.Equal(expectedString, actualString);
+        }
     }
 }
