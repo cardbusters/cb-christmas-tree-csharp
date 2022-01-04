@@ -7,6 +7,10 @@ namespace christmas_tree_kata
     {
         internal static List<object> Draw(int v)
         {
+            for (int countX = 0; countX < length; countX++)
+            {
+                
+            }
             var list = new List<object>(){
                 "       X",
                 "      XXX",
@@ -16,7 +20,7 @@ namespace christmas_tree_kata
                 "       X"};
 
             list.Add("");
-            
+            return list;
         }
     }
 }
