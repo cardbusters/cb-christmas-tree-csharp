@@ -7,19 +7,35 @@ namespace christmas_tree_kata
     {
         internal static List<object> Draw(int v)
         {
-            for (int countX = 0; countX < length; countX++)
-            {
-                
-            }
-            var list = new List<object>(){
-                "       X",
-                "      XXX",
-                "     XXXXX",
-                "    XXXXXXX",
-                "   XXXXXXXXX",
-                "       X"};
+            var list = new List<object>();
 
-            list.Add("");
+            for (int i = 0; i < v; i++)
+            {
+                // find spaces
+                // find x'es
+                //concat and add into list
+                string temp = "";
+                for (int k = 0; k < 7 - i; k++)
+                {
+                    temp += " ";
+                }
+                for (int z = 0; z <= i; z++)
+                {
+                    temp += "X";
+                }
+
+                list.Add(temp);
+            }
+                list.Add("       X");
+
+            // var list = new List<object>(){
+            //     "       X",
+            //     "      XXX",
+            //     "     XXXXX",
+            //     "    XXXXXXX",
+            //     "   XXXXXXXXX",
+            //     "       X"};
+
             return list;
         }
     }
